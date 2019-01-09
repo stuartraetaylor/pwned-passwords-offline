@@ -34,11 +34,12 @@ echo -n "Pwned: "
 
 if [ $e -eq 1 ]; then
     echo "not pwned."
-    exit $e
+    exit 1
 fi
 
 #echo "$(echo -n "$result" | cut -d':' -f2) times"
 echo "pwned!"
+echo "$result" | cut -d':' -f2
 
 exit 0
 
