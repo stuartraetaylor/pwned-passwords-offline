@@ -1,9 +1,12 @@
 #!/bin/bash
 # MIT License - Copyright (c) 2019 Stuart Taylor - https://github.com/stuartraetaylor
 
+defaultPwnedfile="pwned-passwords-sha1-ordered-by-hash-v4.txt"
+defaultLookbin="bin/look"
+
 dir="$(cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd)"
 
-pwnedfile="${1:-$dir/pwned-passwords-ordered-by-hash.txt}"
+pwnedfile="${1:-$dir/$defaultPwnedfile}"
 echo "Using pwned file: ${pwnedfile/$dir\//}"
 
 if [ ! -f "$pwnedfile" ]; then
@@ -11,7 +14,7 @@ if [ ! -f "$pwnedfile" ]; then
     exit 2
 fi
 
-lookbin="${2:-$dir/bin/look}"
+lookbin="${2:-$dir/$defaultLookbin}"
 echo "Using look command: ${lookbin/$dir\//}"
 
 if [ ! -f "$lookbin" ]; then
