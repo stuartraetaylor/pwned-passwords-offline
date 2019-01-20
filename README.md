@@ -1,6 +1,7 @@
 # pwned.sh
 
-A bash script to check for [Pwned Passwords](https://haveibeenpwned.com/Passwords) locally using the pwned passwords list.
+A bash script to check for [Pwned Passwords](https://haveibeenpwned.com/Passwords) offline 
+using the [downloadable pwned passwords list](https://haveibeenpwned.com/Passwords).
 
 ## Usage
 
