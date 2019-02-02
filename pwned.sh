@@ -4,7 +4,7 @@
 defaultPwnedfile="pwned-passwords-sha1-ordered-by-hash-v4.txt"
 defaultLookbin="bin/look"
 
-dir="$(cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd)"
+dir=$PWD
 
 pwnedfile="${1:-$dir/$defaultPwnedfile}"
 echo "Using pwned file: ${pwnedfile/$dir\//}"
