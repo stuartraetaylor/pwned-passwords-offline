@@ -17,8 +17,11 @@ using the [downloadable pwned passwords list](https://haveibeenpwned.com/Passwor
         chmod +x pwned.sh
         ./pwned.sh
 
+## BSD look utility
+
+Requires [look(1)](https://manpages.debian.org/unstable/bsdmainutils/look.1.en.html) -
+[bsdmainutils-look with support for large files](https://github.com/stuartraetaylor/bsdmainutils-look).
 
 ## License
 
 [MIT License](LICENSE)
-
