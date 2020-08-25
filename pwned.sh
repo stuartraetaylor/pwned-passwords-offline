@@ -1,7 +1,7 @@
 #!/bin/bash
 # MIT License - Copyright (c) 2019 Stuart Taylor - https://github.com/stuartraetaylor
 
-defaultPwnedfile="pwned-passwords-sha1-ordered-by-hash-v5.txt"
+defaultPwnedfile="pwned-passwords-sha1-ordered-by-hash-v6.txt"
 defaultLookbin="bin/look"
 
 dir=$PWD
