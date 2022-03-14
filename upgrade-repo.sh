@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-PWNED_VERSION="v7"
+PWNED_VERSION="v8"
 
 if [ -z "$1" ]; then
     echo 'Usage: ./upgrade-repo.sh <version-string>'
-    echo 'e.g., ./upgrade-repo.sh v7'
+    echo 'e.g., ./upgrade-repo.sh v8'
     exit 1
 fi
 
